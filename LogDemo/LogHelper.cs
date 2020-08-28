@@ -19,5 +19,17 @@ namespace LogDemo
             using var sw = new StreamWriter(fs);
             sw.WriteLine(logData);
         }
+
+        public static void LogToConsoleAndFiles(string message, bool logToConsole, string[] logFilePaths, LogLevel level = LogLevel.Information)
+        {
+            if (logToConsole) LogToConsole(message, level);
+            if(logFilePaths!=null)
+            {
+                foreach (var path in logFilePaths)
+                {
+                    LogToFile(message, path, level);
+                }
+            }
+        }
     }
 }
