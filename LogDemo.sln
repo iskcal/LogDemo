@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogDemo", "LogDemo\LogDemo.csproj", "{4D411D9E-591A-4C3E-9000-0D8AA5DE6555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogDemo.Application", "LogDemo.Application\LogDemo.Application.csproj", "{FC23675D-F02E-4AE6-9089-B3D400FD0E26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D411D9E-591A-4C3E-9000-0D8AA5DE6555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D411D9E-591A-4C3E-9000-0D8AA5DE6555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D411D9E-591A-4C3E-9000-0D8AA5DE6555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D411D9E-591A-4C3E-9000-0D8AA5DE6555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC23675D-F02E-4AE6-9089-B3D400FD0E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC23675D-F02E-4AE6-9089-B3D400FD0E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC23675D-F02E-4AE6-9089-B3D400FD0E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC23675D-F02E-4AE6-9089-B3D400FD0E26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89F69952-68C2-4983-B112-7342B069AA3E}
+	EndGlobalSection
+EndGlobal
