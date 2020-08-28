@@ -6,22 +6,24 @@ namespace LogDemo.Application
     {
         static void Main(string[] args)
         {
-            LogHelper.LogToConsole("尝试登录...");
+            string logFileName = "./log.txt";
+
+            LogHelper.LogToFile("尝试登录...", logFileName);
 
             // 验证验证码逻辑
-            LogHelper.LogToConsole("验证码正确");
+            LogHelper.LogToFile("验证码正确", logFileName);
 
-            LogHelper.LogToConsole("尝试连接数据库...");
+            LogHelper.LogToFile("尝试连接数据库...", logFileName);
             // 连接数据库逻辑
-            LogHelper.LogToConsole("连接数据库成功...");
+            LogHelper.LogToFile("连接数据库成功...", logFileName);
 
-            LogHelper.LogToConsole("匹配用户名和密码中...");
+            LogHelper.LogToFile("匹配用户名和密码中...", logFileName);
             // 匹配用户名和密码逻辑
-            LogHelper.LogToConsole("用户名和密码匹配正确");
+            LogHelper.LogToFile("用户名和密码匹配正确", logFileName);
 
-            LogHelper.LogToConsole("检测用户权限中...");
+            LogHelper.LogToFile("检测用户权限中...", logFileName);
             // 验证用户权限
-            LogHelper.LogToConsole("用户登录成功");
+            LogHelper.LogToFile("用户登录成功", logFileName);
         }
     }
 }
