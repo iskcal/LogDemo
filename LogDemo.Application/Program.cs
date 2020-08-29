@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LogDemo.Event;
+using LogDemo.Target;
+using System;
 
 namespace LogDemo.Application
 {
@@ -6,7 +8,10 @@ namespace LogDemo.Application
     {
         static void Main(string[] args)
         {
-            Logger logger = new Logger(true, new[] { "./log.txt" });
+            Logger logger = new Logger();
+            logger.Targets.Add(new ConsoleTarget());
+            logger.Targets.Add(new FileTarget("./log.txt"));
+            logger.Targets.Add(new EmailTarget("from@test.com", "to@test.com"));
 
             logger.LogToTarget(LogLevel.Information, "尝试登录...");
 

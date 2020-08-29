@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LogDemo
+namespace LogDemo.Event
 {
     public class LogData
     {
