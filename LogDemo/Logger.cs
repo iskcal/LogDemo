@@ -9,13 +9,18 @@ namespace LogDemo
 {
     public class Logger
     {
-        public List<ILogTarget> Targets { get; set; } = new List<ILogTarget>();
+        private ILogTarget[] _targets;
+
+        public Logger(ILogTarget[] targets)
+        {
+            _targets = targets;
+        }
 
         public void LogToTarget(LogLevel level, string message)
         {
             var logData = new LogData(level, message);
 
-            foreach (var target in Targets)
+            foreach (var target in _targets)
             {
                 target.WriteLog(logData);
             }

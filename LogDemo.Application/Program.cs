@@ -8,11 +8,12 @@ namespace LogDemo.Application
     {
         static void Main(string[] args)
         {
-            Logger logger = new Logger();
-            logger.Targets.Add(new ConsoleTarget());
-            logger.Targets.Add(new FileTarget("./log.txt"));
-            logger.Targets.Add(new EmailTarget("from@test.com", "to@test.com"));
-
+            Logger logger = new LogBuilder()
+                .AddConsole()
+                .AddFile("./log.txt")
+                .AddEmail("from@test.com", "to@test.com")
+                .CreateLogger();
+               
             logger.LogToTarget(LogLevel.Information, "尝试登录...");
 
             // 验证验证码逻辑
