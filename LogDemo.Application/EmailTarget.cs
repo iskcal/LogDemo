@@ -1,9 +1,10 @@
 ﻿using LogDemo.Event;
+using LogDemo.Target;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace LogDemo.Target
+namespace LogDemo.Application
 {
     public class EmailTarget : ILogTarget
     {
